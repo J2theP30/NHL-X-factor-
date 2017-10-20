@@ -1,6 +1,8 @@
 library(nhlscrapr)
 library(plyr)
 library(dplyr)
+load("C:/Users/JP/Downloads/nhlscrapr-20142015.RData")
+load("C:/Users/JP/Downloads/nhlscrapr-core.RData")
 nhl<- grand.data
 nhl1 <- filter(nhl,nhl$away.skaters == "6" & nhl$home.skaters == "6")
 nhl2 <- filter(nhl1,etype == "SHOT"| etype == "MISS" |etype == "BLOCK")
